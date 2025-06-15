@@ -1,0 +1,31 @@
+/* Style untuk header kolom */
+.table-header {
+    background-color: #318991;
+    -fx-text-fill: white;
+    font-weight: bold;
+}
+
+/* Style untuk TableView */
+.table-view {
+    background-color: white;
+    background-color: white;
+    background-color: white;
+    border-color: #3d5a7e;
+}
+
+/* Style untuk table cell (data rows) */
+.table-cell {
+    background-color: white;
+    -fx-text-fill: black;
+}
+
+/* Style untuk selected row */
+.table-row-cell:selected {
+    background-color: #e3f2fd;
+    -fx-text-fill: black;
+}
+
+/* Style untuk hover effect */
+.table-row-cell:hover {
+    background-color: #f5f5f5;
+}

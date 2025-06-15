@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="6.0" style="-fx-padding: 24; -fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.oop.lostfound.controller.FormDetailLostItemController">
+    <Label fx:id="itemNameLabel" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-font-family: Arial;" />
+    <ImageView fx:id="itemImageView" fitWidth="200" preserveRatio="true" />
+   <Label style="-fx-font-weight: bold;" text="Owner:">
+      <font>
+         <Font name="Arial Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label fx:id="finderNameLabel">
+      <font>
+         <Font name="Arial" size="13.0" />
+      </font>
+   </Label>
+    <Label style="-fx-font-weight: bold;" text="Date Lost:">
+      <font>
+         <Font name="Arial Bold" size="14.0" />
+      </font></Label>
+   <Label fx:id="dateLabel">
+      <font>
+         <Font name="Arial" size="13.0" />
+      </font>
+   </Label>
+   <Label style="-fx-font-weight: bold;" text="Description:">
+      <font>
+         <Font name="Arial Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label fx:id="descriptionLabel" wrapText="true">
+      <font>
+         <Font name="Arial" size="13.0" />
+      </font>
+   </Label>
+</VBox>
