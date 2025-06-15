@@ -47,10 +47,3 @@ mvnw clean package
 ### Jalankan Aplikasi
 ```sh
 mvnw javafx:run
-```
-
-## Kontributor
-- [Nama Anda]
-
-## Lisensi
-Proyek ini menggunakan lisensi MIT.
