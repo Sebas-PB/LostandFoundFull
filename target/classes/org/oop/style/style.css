@@ -1,0 +1,16 @@
+.menu-hover {
+    -fx-font-size: 16px;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial Bold";
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-padding: 0 8 0 8;
+}
+
+.menu-hover:hover
+{
+    -fx-font-size: 19px;
+    -fx-background-color: transparent;
+    -fx-text-fill: #fffdaf;
+    -fx-effect: dropshadow(gaussian, #4ccbd8, 4, 0, 0, 1);
+}

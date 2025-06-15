@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="960.0"
+      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.oop.lostfound.controller.FormRegisterController">
+   <children>
+      <ImageView fitHeight="641.0" fitWidth="975.0" layoutX="-1.0" layoutY="-40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Background.png" />
+         </image>
+      </ImageView>
+
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#d9d9d9" height="306.0" layoutX="331.0" layoutY="119.0" opacity="0.75"
+                 strokeType="INSIDE" width="308.0">
+         <effect>
+            <Glow level="0.4">
+               <input>
+                  <GaussianBlur radius="6.29" />
+               </input>
+            </Glow>
+         </effect>
+      </Rectangle>
+
+      <Label layoutX="439.0" layoutY="138.0" text="REGISTER">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="2.0" radius="0.0" width="0.0" />
+         </effect>
+      </Label>
+
+      <Label layoutX="346.0" layoutY="159.0" prefHeight="9.0" prefWidth="279.0"
+             text="Hello! Please enter your details to create an account" />
+
+      <Label layoutX="407.0" layoutY="383.0" text="Already have an account?">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+
+      <TextField fx:id="usernameTextField" layoutX="351.0" layoutY="185.0" onAction="#usernameTextFieldOnAction"
+                 prefHeight="26.0" prefWidth="258.0" promptText="Username"
+                 style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+
+      <TextField fx:id="phoneTextField" layoutX="351.0" layoutY="218.0" onAction="#phoneTextFieldOnAction"
+                 prefHeight="26.0" prefWidth="258.0" promptText="Phone"
+                 style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+
+      <TextField fx:id="emailTextField" layoutX="351.0" layoutY="254.0" onAction="#emailTextFieldOnAction"
+                 prefHeight="26.0" prefWidth="258.0" promptText="Email"
+                 style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+
+      <PasswordField fx:id="passwordField" layoutX="351.0" layoutY="291.0" onAction="#passwordFieldOnAction"
+                     prefHeight="25.0" prefWidth="258.0" promptText="Password"
+                     style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+
+      <PasswordField fx:id="retypePasswordField" layoutX="351.0" layoutY="323.0" onAction="#retypePasswordFieldOnAction"
+                     prefHeight="25.0" prefWidth="258.0" promptText="Re-Type Password"
+                     style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+
+      <Button fx:id="registerButton" layoutX="434.0" layoutY="357.0" mnemonicParsing="false" onAction="#registerButtonOnAction"
+              prefHeight="26.0" prefWidth="92.0" style="-fx-background-color: #3e3456;"
+              text="Register" textAlignment="CENTER" textFill="WHITE" />
+
+      <Hyperlink fx:id="loginHyperlink" layoutX="531.0" layoutY="380.0" onAction="#loginHyperlinkOnAction" text="Login">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Hyperlink>
+
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="592.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Username.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="592.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Phone.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="592.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Email.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="592.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Password.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
